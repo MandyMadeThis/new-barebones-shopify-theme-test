@@ -1,0 +1,65 @@
+// vertical centring, when flexbox or padding aren't options. 
+// Takes one argument of $height which is the total height of the element that will be vertically centred (including margins & padding)
+@mixin layout-center($height:100%) {
+    position: absolute;
+    margin: auto;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    height: $height;
+}
+
+// Same as above, but removes horizontal centring
+@mixin layout-centerVertical($height:100%) {
+    position: absolute;
+    margin: auto;
+    top: 0; 
+    bottom: 0; 
+    height: $height;
+}
+
+// Flexbox Layout mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-betweenBase {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+@mixin flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

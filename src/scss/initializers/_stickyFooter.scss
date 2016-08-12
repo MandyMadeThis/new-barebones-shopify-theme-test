@@ -1,0 +1,15 @@
+.stickyWrapper {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.stickyBody {
+    height: 100%;
+    display: table-row;
+}
+
+.stickyFooter {
+    display: table-row;
+    height: 1px;
+}

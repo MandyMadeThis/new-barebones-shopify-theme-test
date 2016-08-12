@@ -1,0 +1,31 @@
+// Hide Stuff
+.u-hidden {visibility: hidden;}
+.u-hide {display: none;}
+
+// Typography Utilities
+.u-italic {font-style: italic;}
+.u-bold {font-weight: 500;}
+.u-alignLeft {text-align: left;}
+.u-lowercase {text-transform: lowercase !important;}
+.u-uppercase {text-transform: uppercase !important;}
+.u-small {font-size: 70%;}
+.u-xsmall {font-size: 60%;}
+.u-alignCenter {text-align: center;}
+.u-alignRight {text-align: right;}
+
+
+// Align Utilities
+.u-floatRight {float: right;}
+.u-floatLeft {float: left;}
+
+// Flexbox Layout Classes
+// .u-flexCenter {@include flex-center;}
+// .u-flexStart {@include flex-start;}
+// .u-flexEnd {@include flex-end;}
+// .u-flexBetween {@include flex-between;}
+// .u-flexBetweenBase {@include flex-betweenBase;}
+// .u-flexAround {@include flex-around;}
+// .u-flexColumn {@include flex-column;}
+
+// Miscellaneous Utilities
+.u-nowrap {white-space: nowrap;}
