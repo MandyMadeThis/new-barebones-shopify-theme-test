@@ -1,5 +1,5 @@
 /*!!!
-section: Naming Conventions
+Naming Conventions
 description: |
   In general, the conventions used on this site follow the conventions outlined [here](https://gist.github.com/fat/a47b882eb5f84293c4ed).
 
@@ -19,7 +19,8 @@ description: |
 /*!!!
 section: Folder Structure
 description: |
-  * objects : Most of the code should ideally live within this directory. The various components of the site are each broken down into their own self-contained stylesheet with the name of the component (ex `_buttons.scss`). These files should use plural names when possible instead of singular (`_buttons.scss` not `_button.scss`). Multi-worded objects should use camelCase (ex. `_infoTiles.scss` not `_info-tiles.scss`). One object file should not depend on another object file, meaning the order that objects are loaded should be irrelevant. 
-  * initializers : Code that needs to be loaded before the objects should go here. This would include things that objects would need to reference like colour variables, mixins, etc.
+  * **components** : Most of the code should ideally live within this directory. The various components of the site are each broken down into their own self-contained stylesheet with the name of the component (ex `_buttons.scss`). These files should use plural names when possible instead of singular (`_buttons.scss` not `_button.scss`). Multi-worded components should use camelCase (ex. `_infoTiles.scss` not `_info-tiles.scss`). 
+  * One component file should not depend on another component file, meaning the order that components are loaded should be irrelevant. 
+  * **initializers** : Code that needs to be loaded before the components should go here. This would include things that components would need to reference like colour variables, mixins, etc.
   * pages : Page specific overrides go here. Ideally, these should be used as little as possible, as writing extensive page specific overrides leads to code that is not re-usable.
 */

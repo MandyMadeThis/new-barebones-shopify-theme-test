@@ -5,13 +5,13 @@ footer {
 .footer-social {
     padding:    50px 0;
     
-    a {
+    .socialLink {
         text-decoration: none;
         padding: 10px;
         margin: 0px 10px;
     }
 
-    svg {
+    svg.icon {
         width: 24px;
         height: 24px;
         fill: $brand-accent-color;
@@ -19,6 +19,6 @@ footer {
 }
 
 .footer-lower {
-    background: BLUE;
+    background: $grey-light;
 }
 

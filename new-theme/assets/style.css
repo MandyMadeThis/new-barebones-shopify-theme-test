@@ -282,20 +282,20 @@ body {
   padding: 50px 0;
 }
 
-.footer-social a {
+.footer-social .socialLink {
   text-decoration: none;
   padding: 10px;
   margin: 0px 10px;
 }
 
-.footer-social svg {
+.footer-social svg.icon {
   width: 24px;
   height: 24px;
   fill: #87D4EA;
 }
 
 .footer-lower {
-  background: BLUE;
+  background: #C4C4C4;
 }
 
 /*# sourceMappingURL=style.css.map */
