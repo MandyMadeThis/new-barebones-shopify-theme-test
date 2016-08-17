@@ -3,5 +3,6 @@ var themePath = './new-theme/';
 
 module.exports = {
     themePath: themePath,
-    destPath: themePath + '/assets/'
+    destPath: themePath + '/assets/',
+    snippetPath: themePath + '/snippets/'
 }

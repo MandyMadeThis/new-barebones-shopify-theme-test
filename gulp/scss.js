@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 
 // scss —> Expanded/Readable CSS file
 gulp.task('scss', ['clean'], function () {
-  gulp.src('./src/scss/style.scss')
+  gulp.src('src/scss/style.scss')
     .on('error', notify)
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'expanded'}))

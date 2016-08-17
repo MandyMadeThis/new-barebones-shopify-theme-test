@@ -2,26 +2,27 @@
 <!--[if lt IE 8]><html class="no-js lt-ie8" lang="en"><![endif]-->
 <!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="en"><![endif]-->
 <!--[if IE 9 ]><html class="ie9 no-js"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"><!--<![endif]-->  
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"><!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     {% if template == 'index' %}
-    <title>{{ shop.name }} | {{ page_title }}</title>
-    {% elsif template == '404' %}
-    <title>Page Not Found | {{ shop.name }}</title>
+        <title>{{ shop.name }} | {{ page_title }}</title>
+        {% elsif template == '404' %}
+        <title>Page Not Found | {{ shop.name }}</title>
     {% else %}
-    <title>{{ page_title }} | {{ shop.name }}</title>
+        <title>{{ page_title }} | {{ shop.name }}</title>
     {% endif %}
     {% if page_description %}
-    <meta name="description" content="{{ page_description }}" />
+        <meta name="description" content="{{ page_description }}" />
     {% endif %}
     <link rel="canonical" href="{{ canonical_url }}" />
-    <meta name="viewport" content="width=device-width" />  
+    <meta name="viewport" content="width=device-width" />
     {{ content_for_header }}
     {{ 'style.css' | asset_url | stylesheet_tag }}
 </head>
-<body id="{{ page_title | handle }}" class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
+<body id="{{ page_title | handle }}" class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" style="background-image: url({{ 'testPhoto.jpg' | asset_img_url: 'master' }});">
+    <div class="siteIcons" style="display: none;">{% include 'icons.svg' %}</div>
     <header>
         <p>
             <a href="/cart">{{ cart.item_count }} {{ cart.item_count | pluralize: 'item', 'items' }} ({{ cart.total_price | money }})</a>
@@ -33,7 +34,7 @@
         <nav>
             <ul>
                 {% for link in linklists.main-menu.links %}
-                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                    <li><a href="{{ link.url }}">{{ link.title }}</a></li>
                 {% endfor %}
             </ul>
         </nav>
@@ -42,12 +43,40 @@
         FOR DEVELOPMENT ONLY, PLEASE DELETE FOR PRODUTION READY THEMES:
         UNCOMMENT THE FOLLOWING LINE TO SEE WHAT TEMPLATE IS RENDERING ON SHOPIFY STORE
     {% endcomment %}
-    {% comment %}
-        <p style="display: inline-block; background: yellow; border: 1px solid #000000; padding: 1em; font-weight: 700;">Current template: templates/{{ template }}.liquid</p>
-    {% endcomment %}
+    
+    <p style="display: inline-block; background: yellow; border: 1px solid #000000; padding: 1em; font-weight: 700;">Current template: templates/{{ template }}.liquid</p>
 
     {{ content_for_layout }}
 
-    {{ 'app.js'  | asset_url | script_tag }}
+    <footer>
+        {% if settings.footer_social_enable %}
+        <div class="footer-social">
+            {% include 'social-links' %}
+        </div>
+        {% endif %} 
+
+        <div class="footer-lower">
+            {% if linklists.footer.links.size > 0 %}
+                <p role="navigation">
+                    {% for link in linklists.footer.links %}
+                        <a href="{{ link.url }}" title="{{ link.title }}"{% if link.active %} class="active"{% endif %}>{{ link.title }}</a>
+                    {% endfor %}
+                </p>
+            {% endif %}
+            
+            {% if settings.footer_payment_enable and shop.enabled_payment_types != empty %}
+                <div class="pay-icons">
+                    {% for type in shop.enabled_payment_types %}
+                        {% if payment_icons_available contains type %}
+                            {% include 'asset_svg' with type %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endif %}
+            <p role="contentinfo" class="copyright">Copyright &copy; {{ "now" | date: "%Y" }} {{ shop.name }}. {{ powered_by_link }}.</p>
+        </div>
+    </footer>
+
+{{ 'app.js'  | asset_url | script_tag }}
 </body>
 </html>

@@ -6,8 +6,9 @@ var constants = require('../constants.js'),
 
 
 gulp.task('svgIcons', ['clean'], function() {
-    return gulp.src('./src/icons/**/*.svg')
+    return gulp.src('src/icons/**/*.svg')
         .pipe(rename({prefix: 'icon-'}))
         .pipe(svgstore({fileName: 'icons.svg', inlineSvg: true}))
-        .pipe(gulp.dest(constants.destPath));
+        .pipe(rename({suffix: '.svg', extname: '.liquid'}))
+        .pipe(gulp.dest(constants.snippetPath));
 });

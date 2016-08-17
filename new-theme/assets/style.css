@@ -1,0 +1,301 @@
+/************************************
+  TODO: CONVERT FROM STYLUS TO SCSS
+*************************************/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
+}
+
+/************************************
+  TODO: CONVERT FROM STYLUS TO SCSS
+*************************************/
+a:active, a:focus {
+  outline: none;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  line-height: 1;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/************************************
+  TODO: CONVERT FROM STYLUS TO SCSS
+*************************************/
+/************************************
+  TODO: CONVERT FROM STYLUS TO SCSS
+*************************************/
+@keyframes fadeOut {
+  from {
+    opacity: 1.0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1.0;
+  }
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fromBottom {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 0%, 0);
+  }
+}
+
+@keyframes toBottom {
+  0% {
+    transform: translate3d(0, 0%, 0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes fromTop {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 0%, 0);
+  }
+}
+
+@keyframes toTop {
+  0% {
+    transform: translate3d(0, 0%, 0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0%, 0, 0);
+  }
+}
+
+@keyframes toLeft {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0%, 0, 0);
+  }
+}
+
+@keyframes toRight {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+/************************************
+  TODO: CONVERT FROM STYLUS TO SCSS
+*************************************/
+.stickyWrapper {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.stickyBody {
+  height: 100%;
+  display: table-row;
+}
+
+.stickyFooter {
+  display: table-row;
+  height: 1px;
+}
+
+.u-hidden {
+  visibility: hidden;
+}
+
+.u-hide {
+  display: none;
+}
+
+.u-italic {
+  font-style: italic;
+}
+
+.u-bold {
+  font-weight: 500;
+}
+
+.u-alignLeft {
+  text-align: left;
+}
+
+.u-lowercase {
+  text-transform: lowercase !important;
+}
+
+.u-uppercase {
+  text-transform: uppercase !important;
+}
+
+.u-small {
+  font-size: 70%;
+}
+
+.u-xsmall {
+  font-size: 60%;
+}
+
+.u-alignCenter {
+  text-align: center;
+}
+
+.u-alignRight {
+  text-align: right;
+}
+
+.u-floatRight {
+  float: right;
+}
+
+.u-floatLeft {
+  float: left;
+}
+
+.u-nowrap {
+  white-space: nowrap;
+}
+
+body {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.footer-social {
+  padding: 50px 0;
+}
+
+.footer-social a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 0px 10px;
+}
+
+.footer-social svg {
+  width: 24px;
+  height: 24px;
+  fill: #87D4EA;
+}
+
+.footer-lower {
+  background: BLUE;
+}
+
+/*# sourceMappingURL=style.css.map */

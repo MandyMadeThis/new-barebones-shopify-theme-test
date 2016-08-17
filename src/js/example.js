@@ -7,7 +7,7 @@ var example = {
   },
 
   yourFunction: function() {
-    console.log('inside example.js');
+    console.log('example.js is in the house!');
   }
 }
 

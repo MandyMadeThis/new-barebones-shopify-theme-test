@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 
 // JavaScripty Tings
 gulp.task('browserify', function() {
-  return browserify('./src/js/app.js')
+  return browserify('src/js/app.js')
       .bundle()
       .on('error', notify)
       //Pass desired output filename to vinyl-source-stream

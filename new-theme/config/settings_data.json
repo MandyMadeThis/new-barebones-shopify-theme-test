@@ -1,9 +1,38 @@
 {
-  "current": "Slate",
-  "presets": {
-    "Slate": {
-      "use_logo": false,
-      "customer_layout": "theme"
-    }
+  "current": {
+    "footer_social_enable": true,
+    "footer_newsletter_enable": false,
+    "newsletter_form_action": "",
+    "footer_payment_enable": false,
+    "cart_notes_enable": false,
+    "facebook_url": "https:\/\/www.facebook.com\/mandymadethis",
+    "twitter_url": "https:\/\/twitter.com\/mandymadethis",
+    "instagram_url": "https:\/\/instagram.com\/mandymadethis",
+    "linkedin_url": "",
+    "googleplus_url": "",
+    "youtube_url": "",
+    "vimeo_url": "",
+    "pinterest_url": "",
+    "contact_email": "mailto:hi@mandymadethis.com",
+    "collection_sharing_enabled": false,
+    "blog_rss_enabled": false,
+    "checkout_use_header_image": false,
+    "checkout_header_image": "",
+    "checkout_logo": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_use_body_background_image": false,
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_use_sidebar_background_image": false,
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#1990C6",
+    "checkout_button_color": "#1990C6",
+    "checkout_error_color": "#ff6d6d"
   }
 }
