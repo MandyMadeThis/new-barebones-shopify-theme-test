@@ -21,7 +21,7 @@
     {{ content_for_header }}
     {{ 'style.css' | asset_url | stylesheet_tag }}
 </head>
-<body id="{{ page_title | handle }}" class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" style="background-image: url({{ 'testPhoto.jpg' | asset_img_url: 'master' }});">
+<body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}">
     <div class="siteIcons" style="display: none;">{% include 'icons.svg' %}</div>
     <header>
         <p>

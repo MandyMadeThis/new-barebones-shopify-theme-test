@@ -1,31 +1,30 @@
 // Hide Stuff
-.u-hidden {visibility: hidden;}
-.u-hide {display: none;}
+.u-hide {display: none !important;}
 
 // Typography Utilities
-.u-italic {font-style: italic;}
-.u-bold {font-weight: 500;}
-.u-alignLeft {text-align: left;}
+.u-italic {font-style: italic !important;}
+.u-bold {font-weight: 500 !important;}
+.u-alignLeft {text-align: left !important;}
 .u-lowercase {text-transform: lowercase !important;}
 .u-uppercase {text-transform: uppercase !important;}
-.u-small {font-size: 70%;}
-.u-xsmall {font-size: 60%;}
-.u-alignCenter {text-align: center;}
-.u-alignRight {text-align: right;}
+.u-small {font-size: 70% !important;}
+.u-xsmall {font-size: 60% !important;}
+.u-alignCenter {text-align: center !important;}
+.u-alignRight {text-align: right !important;}
 
 
 // Align Utilities
-.u-floatRight {float: right;}
-.u-floatLeft {float: left;}
+.u-floatRight {float: right !important;}
+.u-floatLeft {float: left !important;}
 
 // Flexbox Layout Classes
-// .u-flexCenter {@include flex-center;}
-// .u-flexStart {@include flex-start;}
-// .u-flexEnd {@include flex-end;}
-// .u-flexBetween {@include flex-between;}
-// .u-flexBetweenBase {@include flex-betweenBase;}
-// .u-flexAround {@include flex-around;}
-// .u-flexColumn {@include flex-column;}
+// .u-flexCenter {@include flex-center !important;}
+// .u-flexStart {@include flex-start !important;}
+// .u-flexEnd {@include flex-end !important;}
+// .u-flexBetween {@include flex-between !important;}
+// .u-flexBetweenBase {@include flex-betweenBase !important;}
+// .u-flexAround {@include flex-around !important;}
+// .u-flexColumn {@include flex-column !important;}
 
 // Miscellaneous Utilities
-.u-nowrap {white-space: nowrap;}
+.u-nowrap {white-space: nowrap !important;}

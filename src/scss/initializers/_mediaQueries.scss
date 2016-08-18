@@ -1,11 +1,31 @@
-/************************************
-  TODO: CONVERT FROM STYLUS TO SCSS
-*************************************/
+@mixin media($bp) {
+    // If the key exists in the map
+    @if map-has-key($breakpoints, $bp) {
+        // Prints a media query based on the value
+        @media #{inspect(map-get($breakpoints, $bp))} {
+            @content;
+        }
+    }
 
-// breakpoints ?= {
-//   large: {breakpoint: '(min-width: 481px)', gutter: 24px},
-//   desk: {breakpoint: '(min-width: 1024px)', gutter: 24px},
-//   lap: {breakpoint: '(min-width: 481px) and (max-width: 1023px)', gutter: 24px},
-//   portable: {breakpoint: '(max-width: 1023px)', gutter: 24px},
-//   palm: {breakpoint: '(max-width: 480px)', gutter: 24px}
-// }
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoints}`. " + "Please make sure it is defined in the `$breakpoints` map.";
+    }
+}
+
+// USE LIKE THIS:
+
+// min-width 481px???
+@include media(large) {}
+
+// min-width 1024px +
+@include media(desk) {}
+
+// 481px to 1023px
+@include media(lap) {}
+
+// max-width 1023px
+@include media(portable) {}
+
+// <= 480px
+@include media(palm) {}
+  

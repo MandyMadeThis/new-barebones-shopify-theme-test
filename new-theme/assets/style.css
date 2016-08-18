@@ -41,9 +41,6 @@ iframe {
   max-width: 100%;
 }
 
-/************************************
-  TODO: CONVERT FROM STYLUS TO SCSS
-*************************************/
 a:active, a:focus {
   outline: none;
 }
@@ -60,9 +57,11 @@ h6, .h6 {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-/************************************
-  TODO: CONVERT FROM STYLUS TO SCSS
-*************************************/
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
 /************************************
   TODO: CONVERT FROM STYLUS TO SCSS
 *************************************/
@@ -216,24 +215,20 @@ h6, .h6 {
   height: 1px;
 }
 
-.u-hidden {
-  visibility: hidden;
-}
-
 .u-hide {
-  display: none;
+  display: none !important;
 }
 
 .u-italic {
-  font-style: italic;
+  font-style: italic !important;
 }
 
 .u-bold {
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 .u-alignLeft {
-  text-align: left;
+  text-align: left !important;
 }
 
 .u-lowercase {
@@ -245,31 +240,31 @@ h6, .h6 {
 }
 
 .u-small {
-  font-size: 70%;
+  font-size: 70% !important;
 }
 
 .u-xsmall {
-  font-size: 60%;
+  font-size: 60% !important;
 }
 
 .u-alignCenter {
-  text-align: center;
+  text-align: center !important;
 }
 
 .u-alignRight {
-  text-align: right;
+  text-align: right !important;
 }
 
 .u-floatRight {
-  float: right;
+  float: right !important;
 }
 
 .u-floatLeft {
-  float: left;
+  float: left !important;
 }
 
 .u-nowrap {
-  white-space: nowrap;
+  white-space: nowrap !important;
 }
 
 body {

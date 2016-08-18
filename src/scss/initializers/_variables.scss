@@ -19,9 +19,8 @@ $white: #FFFFFF;
 // BACKGROUND COLOR
 $base-background-color: $white;
 
-// Fonts
+// Font Colours
 $base-font-color: $grey;
-$brand-accent-color: $brand-accent-color;
 
 // Link Colors
 $base-link-color: $brand-accent-color;
@@ -29,11 +28,21 @@ $hover-link-color: darken($brand-accent-color, 25%);
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
 
-// global transition duration
+// Global Transition Duration
 $trans-dur: 0.25s;
 
 // Easing
 $base-easing: ease-in-out;
 $sweetEasing: cubic-bezier(0.4, 0, 0.2, 1);
+
+// Grid/Media Query Variables
+$gutter: 24px;
+$breakpoints: (
+  "large": (min-width: 481px),
+  "desk": (min-width: 1024px),
+  "lap": (min-width: 481px) and (max-width: 1023px),
+  "portable": (max-width: 1023px),
+  "palm": (max-width: 480px)
+);
 
 
